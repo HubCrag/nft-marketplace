@@ -1,7 +1,6 @@
 ## Hubcrag Background Lines Effect
 
-### Frontend dependencies
-
+### [Watch it on youtube](https://youtu.be/JBPtKJolVWQ)
 
 ### Setup demo project
 
