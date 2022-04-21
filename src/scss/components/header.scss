@@ -1,0 +1,207 @@
+.header {
+  border-bottom: 1px solid var(--color-border);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    @include m {
+      flex-wrap: wrap;
+    }
+    .logo {
+      color: var(--color-txt);
+      position: relative;
+      font-size: 26px;
+      font-weight: 600;
+      text-decoration: none;
+      padding-right: 15px;
+      margin-right: 15px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1px;
+        height: 100%;
+        background-color: var(--color-border);
+      }
+    }
+    .btns {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+      .btn {
+        background-color: var(--color-primary-alt);
+        color: #fff;
+        padding: 6px 14px;
+        border-radius: 40px;
+        font-weight: 500;
+        &:hover {
+          background-color: var(--color-primary);
+        }
+      }
+      .wallet-btn {
+        @include f {
+          display: none;
+        }
+      }
+      .wallet {
+        @include _f {
+          display: none;
+        }
+      }
+      .notification {
+        .badge {
+          position: absolute;
+          top: -6px;
+          right: -2px;
+          padding: 0 5px;
+          background: var(--color-primary);
+          border-radius: 500px;
+          line-height: 20px;
+          min-width: 20px;
+          height: 20px;
+          font-size: 0.75em;
+          font-weight: 700;
+          line-height: 1;
+          color: #fff;
+          text-align: center;
+          white-space: nowrap;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+      .icon-box {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--color-border);
+        border-radius: 40px;
+        cursor: pointer;
+        color: var(--color-txt);
+        &:after {
+          position: absolute;
+          content: "";
+          width: 100%;
+          height: 100%;
+          background: var(--bg-color-3);
+          top: 0;
+          left: 0;
+          -webkit-transform: scale(0.5);
+          -moz-transform: scale(0.5);
+          transform: scale(0.5);
+          opacity: 0;
+          border-radius: 100%;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          transition: 0.3s;
+          z-index: -1;
+        }
+        &:hover {
+          &:after {
+            transform: scale(1);
+            opacity: 1;
+          }
+        }
+        svg {
+          width: 18px;
+          height: 18px;
+        }
+      }
+    }
+  }
+}
+
+.switcher {
+  &-btn {
+    &.light {
+      display: none;
+    }
+  }
+  &.sun {
+    .switcher-btn {
+      &.light {
+        display: block;
+      }
+      &.dark {
+        display: none;
+      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  @include m {
+    display: block;
+  }
+}
+
+.search-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  text-align: center;
+  background-color: var(--bg-color-4);
+  box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+  z-index: 100;
+  transform: translateY(-100%);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &.is-active {
+    transform: translateY(0);
+  }
+  form {
+    display: flex;
+    width: 100%;
+    max-width: 38rem;
+    @include a {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  input {
+    width: 100%;
+    max-width: 38rem;
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-title);
+    &::placeholder {
+      color: var(--color-txt);
+    }
+  }
+  &__wrapper {
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .close {
+      position: absolute !important;
+      top: 20px;
+      right: 10%;
+      left: auto;
+      @include m {
+        right: 10px;
+      }
+      @include a {
+        top: 5px;
+      }
+    }
+  }
+}

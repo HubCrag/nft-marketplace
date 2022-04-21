@@ -1,0 +1,75 @@
+.hero {
+  &__wrapper {
+    padding: 208px 0 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include m {
+      flex-direction: column;
+    }
+  }
+  &__data {
+    @include m {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .subtitle {
+      font-size: 66px;
+      line-height: 1.3;
+      color: var(--color-title);
+      @include t {
+        font-size: 48px;
+      }
+    }
+    .title {
+      font-size: 66px;
+      line-height: 1.3;
+      color: var(--color-title);
+      @include t {
+        font-size: 48px;
+      }
+      span {
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgb(0, 0, 0);
+        -webkit-text-fill-color: rgb(0 0 0/0%);
+      }
+    }
+    .info {
+      font-size: 20px;
+      line-height: 30px;
+      color: var(--color-txt);
+      text-transform: capitalize;
+      margin-top: 32px;
+      margin-bottom: 58px;
+    }
+    .btns {
+      .btn {
+        &:nth-child(1) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__card {
+    display: flex;
+    gap: 20px;
+    @include f {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.dark {
+  .hero {
+    .title {
+      span {
+        background: linear-gradient(-45deg, #00a3ff, #212e48, #00a3ff, #212e48);
+        background-size: 100% 100%;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 3px transparent;
+        -webkit-text-fill-color: #14141f;
+      }
+    }
+  }
+}
