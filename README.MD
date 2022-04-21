@@ -1,4 +1,4 @@
-## Hubcrag Background Lines Effect
+## Hubcrag NFT Marketplace
 
 ### [Watch it on youtube](https://youtu.be/JBPtKJolVWQ)
 
