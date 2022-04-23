@@ -1,6 +1,6 @@
 ## Hubcrag NFT Marketplace
 
-### [Watch it on youtube](https://youtu.be/JBPtKJolVWQ)
+### [Watch it on youtube](https://youtu.be/Ey02u2QQ_Y4)
 
 ### Setup demo project
 
