@@ -1,6 +1,6 @@
 ## Hubcrag NFT Marketplace
 
-### [Watch it on youtube](https://youtu.be/Ey02u2QQ_Y4)
+### [Watch it on youtube](https://youtu.be/JBPtKJolVWQ)
 
 ### Setup demo project
 
@@ -23,3 +23,5 @@
         └── /components/        # Scss components
         └── /vendor/            # Css or scss libraries
     ├── /static/                # Static files (fonts, images, videos, etc..)
+
+### Icons [View](https://feathericons.com)
