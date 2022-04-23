@@ -23,5 +23,6 @@
         └── /components/        # Scss components
         └── /vendor/            # Css or scss libraries
     ├── /static/                # Static files (fonts, images, videos, etc..)
+```
 
 ### Icons [View](https://feathericons.com)
