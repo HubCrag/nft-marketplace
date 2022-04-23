@@ -123,6 +123,10 @@ em {
   height: 100%;
 }
 
+.section {
+  padding-bottom: 100px;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;
@@ -160,4 +164,10 @@ button {
       background-color: var(--color-primary-alt);
     }
   }
+}
+
+
+hr {
+  border: none;
+  border-top: 1px solid var(--bg-color-1);
 }

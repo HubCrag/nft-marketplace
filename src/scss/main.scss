@@ -5,6 +5,7 @@
 // Base
 @import "fonts";
 @import "vendor/normalize";
+@import "vendor/swiper-bundle.min";
 @import "base";
 
 // Components
@@ -13,8 +14,17 @@
 @import "components/nav";
 @import "components/burger";
 @import "components/card";
+@import "components/footer";
+
 
 
 @import "components/s-hero";
+@import "components/s-live";
+@import "components/s-steps";
+@import "components/s-news";
+@import "components/s-seller";
+@import "components/s-products";
+@import "components/s-collection";
+
 
 

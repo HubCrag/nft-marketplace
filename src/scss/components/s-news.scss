@@ -1,0 +1,30 @@
+.news {
+    &__wrapper {
+        &-head {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: var(--color-title);
+            margin-bottom: 50px;
+            .view-more-btn {
+                display: flex;
+                align-items: center;
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        color: var(--color-primary);
+                    }
+                }
+            }
+        }
+        &-body {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            @include t {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}

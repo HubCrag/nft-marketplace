@@ -1,0 +1,214 @@
+.footer {
+  background-color: var(--bg-color-4);
+  padding: 100px 0 0;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    @include t {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    max-width: 25%;
+    margin-bottom: 30px;
+    @include t {
+      max-width: 30%;
+    }
+    @include m {
+      width: 100%;
+      max-width: 50%;
+    }
+    @include f {
+      max-width: 100%;
+    }
+    > .title {
+      font-size: 24px;
+      margin-bottom: 25px;
+      color: var(--color-title);
+    }
+    .footer__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        margin: 11px 0;
+      }
+      a {
+        text-decoration: none;
+        position: relative;
+        font-size: 16px;
+        color: var(--color-light);
+        font-weight: 400;
+        transition: 0.4s;
+        position: relative;
+        &:after {
+          position: absolute;
+          content: "";
+          left: auto;
+          bottom: 0;
+          background: var(--color-primary);
+          width: 0;
+          height: 2px;
+          -webkit-transition: 0.3s;
+          -moz-transition: 0.3s;
+          transition: 0.3s;
+          right: 0;
+        }
+        &:hover {
+          color: var(--color-primary);
+          &:after {
+            width: 100%;
+            left: 0;
+            right: auto;
+          }
+        }
+      }
+    }
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      padding: 0 30px 0 0;
+      color: var(--color-light);
+    }
+    .desc {
+      margin-top: 10px;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      color: var(--color-light);
+    }
+    .widget {
+      margin-top: 40px;
+      .title {
+        font-weight: 500;
+        font-size: 16px;
+        color: var(--color-title);
+      }
+    }
+    .input-group {
+      position: relative;
+      display: -moz-box;
+      display: flex;
+      -moz-box-align: stretch;
+      align-items: stretch;
+      width: 100%;
+      margin-top: 10px;
+      @include t {
+        flex-wrap: wrap;
+      }
+      input {
+        border: none;
+        background-color: var(--bg-color-1);
+        position: relative;
+        z-index: 1;
+        font-size: 16px;
+        border-radius: 5px 0 0 5px;
+        padding: 2px 8px;
+        color: var(--color-txt);
+        &::placeholder {
+            color: var(--color-txt);
+        }
+      }
+      &-append {
+        button {
+          display: inline-block;
+          font-weight: 500;
+          text-align: center;
+          font-size: 16px;
+          color: var(--color-white);
+          padding: 10px 16px;
+          border-radius: 10px;
+          transition: 0.4s;
+          letter-spacing: 0.5px;
+          width: auto;
+          border: 0;
+        }
+      }
+    }
+  }
+  .recent {
+    &-post {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li {
+        display: flex;
+        align-items: center;
+        padding: 10px 0;
+        a {
+          text-decoration: none;
+          &:hover {
+            color: var(--color-primary);
+          }
+        }
+        .title {
+            color: var(--color-title);
+        }
+        .thumbnail {
+          margin-right: 12px;
+          img {
+            max-height: 60px;
+            border-radius: 100%;
+            object-fit: cover;
+          }
+        }
+        p {
+          margin-bottom: 3px;
+          font-size: 13px;
+          margin: 0;
+        }
+        span {
+          color: var(--color-primary);
+          font-weight: 700;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &__info {
+    margin-top: 60px;
+    border-top: 1px solid var(--color-border);
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: var(--color-light);
+    @include m {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .list {
+      margin-left: 50px;
+    }
+    a {
+      text-decoration: none;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+    .social {
+      margin-left: auto;
+      @include m {
+        margin: 0;
+      }
+      a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--color-border);
+        border-radius: 40px;
+        svg {
+          width: 15px;
+          height: 15px;
+        }
+      }
+    }
+  }
+}
